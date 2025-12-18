@@ -24,7 +24,7 @@ Elective-1/
 │
 └── README.md
 
-
+```
 ## 🧩 Project Categories
 
 ### 1️⃣ Console Applications
