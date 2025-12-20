@@ -1,0 +1,14 @@
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\bin\Debug\net9.0\PokemonPractical.exe
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\bin\Debug\net9.0\PokemonPractical.deps.json
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\bin\Debug\net9.0\PokemonPractical.runtimeconfig.json
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\bin\Debug\net9.0\PokemonPractical.dll
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\bin\Debug\net9.0\PokemonPractical.pdb
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\obj\Debug\net9.0\PokemonPractical.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\obj\Debug\net9.0\PokemonPractical.AssemblyInfoInputs.cache
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\obj\Debug\net9.0\PokemonPractical.AssemblyInfo.cs
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\obj\Debug\net9.0\PokemonPractical.csproj.CoreCompileInputs.cache
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\obj\Debug\net9.0\PokemonPractical.dll
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\obj\Debug\net9.0\refint\PokemonPractical.dll
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\obj\Debug\net9.0\PokemonPractical.pdb
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\obj\Debug\net9.0\PokemonPractical.genruntimeconfig.cache
+C:\Users\Degu\Desktop\C#Projects\PokemonPractical\obj\Debug\net9.0\ref\PokemonPractical.dll
