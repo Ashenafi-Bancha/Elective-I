@@ -17,8 +17,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.MapGet("/", () => "Welecome to the PokemonMinimalAPI");
+//Home Page
+app.MapGet("/", () => "Welcome to the Minimal API Implementation of Pokemon");
 
 List<Pokemon> pokemons = new()
 {
