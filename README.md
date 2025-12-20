@@ -13,14 +13,14 @@ The purpose of this repository is to demonstrate **event-driven concepts**, **co
 Elective-1/
 │
 ├── ConsoleApps/
-│   └── Event-driven console applications
+│   └── PokemanPractical
 │
 ├── WebAPIs/
 │   ├── MinimalAPI/
-│   │   └── ASP.NET Core Minimal API projects
+│   │   └── PokemanMinimalApi
 │   │
 │   └── ControllerAPI/
-│       └── ASP.NET Core Controller-based API projects
+│       └──PokemanContrellerApi
 │
 └── README.md
 
