@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPIs", "WebAPIs", "{015A4599-E593-B3F5-DFE3-A565501F2A13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MinimalApi", "MinimalApi", "{BCD49139-3A3B-CF56-999C-736410E5FE69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemanMinimalApi", "WebAPIs\MinimalApi\PokemanMinimalApi\PokemanMinimalApi.csproj", "{A47213EB-CB75-6705-BBCA-89039F9E87EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A47213EB-CB75-6705-BBCA-89039F9E87EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47213EB-CB75-6705-BBCA-89039F9E87EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47213EB-CB75-6705-BBCA-89039F9E87EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47213EB-CB75-6705-BBCA-89039F9E87EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BCD49139-3A3B-CF56-999C-736410E5FE69} = {015A4599-E593-B3F5-DFE3-A565501F2A13}
+		{A47213EB-CB75-6705-BBCA-89039F9E87EA} = {BCD49139-3A3B-CF56-999C-736410E5FE69}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8694819B-6088-405F-BD00-50692E0A0D74}
+	EndGlobalSection
+EndGlobal
