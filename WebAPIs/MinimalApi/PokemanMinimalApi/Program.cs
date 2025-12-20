@@ -19,6 +19,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 //Home Page
 app.MapGet("/", () => "Welcome to the Minimal API Implementation of Pokemon");
+// 2. This is the In-Memory list for the Pokemon data
 
 List<Pokemon> pokemons = new()
 {
