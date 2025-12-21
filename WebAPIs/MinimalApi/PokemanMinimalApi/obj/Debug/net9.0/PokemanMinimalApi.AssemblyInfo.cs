@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokemanMinimalApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe30384475467b6854620529d1f70372cb678b70")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ae889c7ca3223cb40a75c3095201bbd8ab9471c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokemanMinimalApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokemanMinimalApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
