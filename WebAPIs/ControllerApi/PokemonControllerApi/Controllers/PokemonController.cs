@@ -17,7 +17,7 @@ public class PokemonController : ControllerBase
     [HttpGet("/")]
     public IActionResult Home()
     {
-        return Ok("Welcome to the Pokemon API!");
+        return Ok("Welcome to the Pokemon Controlled based API!");
     }
     
     // GET /pokemon
