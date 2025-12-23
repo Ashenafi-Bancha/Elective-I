@@ -1,0 +1,9 @@
+C:\Users\Degu\Desktop\Elective-I\WebAPIs\ControllerApi\PokemonControllerApi\obj\Debug\net9.0\PokemonControllerApi.csproj.AssemblyReference.cache
+C:\Users\Degu\Desktop\Elective-I\WebAPIs\ControllerApi\PokemonControllerApi\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Degu\Desktop\Elective-I\WebAPIs\ControllerApi\PokemonControllerApi\obj\Debug\net9.0\PokemonControllerApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Degu\Desktop\Elective-I\WebAPIs\ControllerApi\PokemonControllerApi\obj\Debug\net9.0\PokemonControllerApi.AssemblyInfoInputs.cache
+C:\Users\Degu\Desktop\Elective-I\WebAPIs\ControllerApi\PokemonControllerApi\obj\Debug\net9.0\PokemonControllerApi.AssemblyInfo.cs
+C:\Users\Degu\Desktop\Elective-I\WebAPIs\ControllerApi\PokemonControllerApi\obj\Debug\net9.0\PokemonControllerApi.csproj.CoreCompileInputs.cache
+C:\Users\Degu\Desktop\Elective-I\WebAPIs\ControllerApi\PokemonControllerApi\obj\Debug\net9.0\PokemonControllerApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Degu\Desktop\Elective-I\WebAPIs\ControllerApi\PokemonControllerApi\obj\Debug\net9.0\PokemonControllerApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Degu\Desktop\Elective-I\WebAPIs\ControllerApi\PokemonControllerApi\obj\Debug\net9.0\PokemonControllerApi.sourcelink.json
