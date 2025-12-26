@@ -1,94 +1,52 @@
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/pokemon")]
 public class PokemonController : ControllerBase
 {
-    // In-memory Pokemon list
-    private static List<Pokemon> pokemons = new()
-    {
-        new Pokemon { Id = 1, Name = "Pikachu", Level = 10 },
-        new Pokemon { Id = 2, Name = "Charmander", Level = 8 },
-        new Pokemon { Id = 3, Name = "Bulbasaur", Level = 12 }
-    };
+    private readonly PokemonService _pokemonService;
 
-    // Home
-   
-    [HttpGet("/")]
-    public IActionResult Home()
+    public PokemonController(PokemonService pokemonService)
     {
-        return Ok("Welcome to the Pokemon Controlled based API!");
+        _pokemonService = pokemonService;
     }
-    
-    // GET /pokemon
-   
-    [HttpGet("/pokemon")]
+
+    [HttpGet]
     public IActionResult GetAll()
     {
-        return Ok(pokemons);
+        return Ok(_pokemonService.GetAllPokemon());
     }
 
-    // GET /pokemon/{id}
-    [HttpGet("{id:int}")]
-    public IActionResult GetById(int id)
+    [HttpGet("{name}")]
+    public IActionResult GetByName(string name)
     {
-        var pokemon = pokemons.FirstOrDefault(p => p.Id == id);
-
-        if (pokemon == null)
-            return NotFound($"Pokemon with ID {id} not found.");
-
+        var pokemon = _pokemonService.GetPokemonByName(name);
+        if (pokemon == null) return NotFound();
         return Ok(pokemon);
     }
 
-
-    // POST /pokemon
-    // =========================
     [HttpPost]
-    public IActionResult Create([FromBody] Pokemon pokemon)
+    public IActionResult Add(Pokemon pokemon)
     {
-        if (pokemon == null)
-            return BadRequest("Invalid Pokemon data.");
-
-        pokemon.Id = pokemons.Count == 0
-            ? 1
-            : pokemons.Max(p => p.Id) + 1;
-
-        pokemons.Add(pokemon);
-
-        return CreatedAtAction(nameof(GetById), new { id = pokemon.Id }, pokemon);
+        _pokemonService.AddPokemon(pokemon);
+        return Ok("Pokemon added successfully");
     }
 
-    // =========================
-    // DELETE /pokemon/{id}
-    // =========================
-    [HttpDelete("{id:int}")]
-    public IActionResult Delete(int id)
+    // Change Delete to use name instead of id
+    [HttpDelete("{name}")]
+    public IActionResult Delete(string name)
     {
-        var pokemon = pokemons.FirstOrDefault(p => p.Id == id);
-
-        if (pokemon == null)
-            return NotFound($"Pokemon with ID {id} does not exist.");
-
-        pokemons.Remove(pokemon);
-
-        return Ok(pokemons);
+        var success = _pokemonService.DeletePokemonByName(name);
+        if (!success) return NotFound();
+        return Ok("Pokemon deleted");
     }
 
-    // =========================
-    // PUT /pokemon/{name}/train/{amount}
-    // =========================
-    [HttpPut("{name}/train/{amount:int}")]
-    public IActionResult Train(string name, int amount)
+    // Change Train to use name instead of id
+    [HttpPut("train/{name}")]
+    public IActionResult Train(string name)
     {
-        var pokemon = pokemons.FirstOrDefault(p =>
-            p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
-
-        if (pokemon == null)
-            return NotFound($"Pokemon '{name}' not found.");
-
-        pokemon.GainExperience(amount);
-
-        return Ok(pokemon);
+        var success = _pokemonService.TrainPokemonByName(name);
+        if (!success) return NotFound();
+        return Ok("Pokemon trained");
     }
 }
-
